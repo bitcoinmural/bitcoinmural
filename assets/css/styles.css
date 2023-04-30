@@ -95,14 +95,6 @@ ul{
   list-style: none;
 }
 
-a{
-  text-decoration: none;
-}
-
-img{
-  max-width: 100%;
-  height: auto;
-}
 
 button,
 input{
@@ -638,32 +630,6 @@ a.button {
   overflow: hidden;
 }
 
-.footer__img-one,
-.footer__img-two{
-  position: absolute;
-  transition: .3s;
-}
-
-.footer__img-one{
-  width: 100px;
-  top: 6rem;
-  right: -2rem;
-}
-
-.footer__img-two{
-  width: 150px;
-  bottom: 4rem;
-  right: 4rem;
-}
-
-.footer__img-one:hover,
-.footer__img-two:hover{
-  transform: translateY(-.5rem);
-}
-
-.footer__container{
-  row-gap: 2rem;
-}
 
 .footer__logo{
   display: flex;
