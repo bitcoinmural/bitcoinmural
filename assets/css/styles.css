@@ -15,7 +15,7 @@
 
   /*Green gradient*/
   --body-color: linear-gradient(90deg, hsl(112, 40%, 42%) 0%, hsl(112 40% 42%) 100%);
-  --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(97, 45%, 38%) 100%);
+  --container-color: linear-gradient(136deg, hsl(103, 28%, 35%) 0%, hsl(97, 45%, 38%) 100%);
   
   /*Red gradient*/
   /* --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
@@ -114,7 +114,7 @@ button{
 }
 
 .section__title{
-  font-size: var(--h2-font-size);
+  font-size: var(--biggest-font-size);
   margin-bottom: var(--mb-2);
   text-align: center;
 }
@@ -382,7 +382,7 @@ button{
 
 /*=============== CATEGORY ===============*/
 .category__container{
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr); /*colom*/
   gap: 1rem 2rem;
 }
 
@@ -390,10 +390,15 @@ button{
   text-align: center;
 }
 
-.category__img{
-  width: 120px;
+.category__img-wrapper {
+  display: flex;
+  justify-content: center;
   margin-bottom: var(--mb-0-75);
   transition: .3s;
+}
+
+.category__img {
+  width: 350px;
 }
 
 .category__title{
@@ -418,7 +423,7 @@ button{
 }
 
 .about__img{
-  width: 200px;
+  width: 350px;
   justify-self: center;
   animation: floating 2s ease-in-out infinite;
 }
@@ -557,6 +562,7 @@ a.button {
 .new__subtitle{
   display: block;
   font-size: var(--small-font-size);
+  color:#ffff;
   margin-bottom: var(--mb-0-5);
 }
 
@@ -625,6 +631,34 @@ a.button {
 }
 
 /*=============== FOOTER ===============*/
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  grid-column-gap: 5px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #4e724066;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 20px; /* menambahkan margin kanan */
+  margin-left: 20px; /* menambahkan margin kiri */
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0px;
+  object-fit: contain;
+}
+
 .footer{
   position: relative;
   overflow: hidden;
