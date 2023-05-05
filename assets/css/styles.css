@@ -631,13 +631,13 @@ a.button {
   color: var(--text-color);
 }
 
-/*=============== FOOTER ===============*/
+/*=============== FOOTER ===============
 .social-links {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 5px;
-  grid-column-gap: 5px;
+  gap: 1px;
+  grid-column-gap: 1px;
 }
 
 .social-links a {
@@ -646,16 +646,34 @@ a.button {
   text-align: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #4e724066;
-  padding: 10px;
+  background-color: #4e724000;
+  padding: 30px;
   border-radius: 5px;
-  margin-right: 20px; /* menambahkan margin kanan */
-  margin-left: 20px; /* menambahkan margin kiri */
+  margin-right: 20px; 
+  margin-left: 20px; 
+}*/
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  align-items: center;
+  
+  background-color: #4e724000;
+  border-radius: 5px;
+  margin-right: 20px; 
+  margin-left: 20px; 
+  justify-content: center;
 }
 
 .social-links a img {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   margin-right: 0px;
   object-fit: contain;
 }
@@ -664,7 +682,6 @@ a.button {
   position: relative;
   overflow: hidden;
 }
-
 
 .footer__logo{
   display: flex;
