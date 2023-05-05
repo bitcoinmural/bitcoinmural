@@ -349,6 +349,7 @@ button{
   border-radius: .5rem;
   font-weight: var(--font-medium);
   transition: .3s;
+  justify-content: center;
 }
 
 .button:hover{
@@ -496,12 +497,6 @@ button{
   row-gap: .75rem;
 }
 
-.discount__title{
-
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
-}
-
 .discount__img{
   width: 200px;
   justify-self: center;
@@ -514,6 +509,12 @@ h2.section__titlediscount {
 h2.discount__title {
   text-align: center;
   font-size: var(--h3-font-size);
+}
+
+b.button {
+  display: block;
+  text-align: center;
+  margin: 20px;
 }
 
 a.button {
