@@ -383,31 +383,25 @@ button{
 
 /*=============== CATEGORY ===============*/
 .category__container{
-  grid-template-columns: repeat(1fr); /*colom*/
-  gap: 1rem 2rem;
+  row-gap: 2rem;
 }
 
 .category__data{
   text-align: center;
 }
 
-.category__img-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--mb-0-75);
-  transition: .3s;
-}
-
 .category__img {
   width: 350px;
+  justify-self: center;
+  animation: floating 2s ease-in-out infinite;
 }
 
 .category__title{
-  margin-bottom: var(--mb-0-25);
+  margin-bottom: var(--mb-2);
 }
 
-.category__data:hover .category__img{
-  transform: translateY(-.5rem);
+.category__description{
+  margin-bottom: var(--mb-2);
 }
 
 /*=============== ABOUT ===============*/
@@ -865,10 +859,12 @@ a.button {
   }
 
   .category__container{
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
   }
-
+  .category__img{
+    width: 350px;
+  }
   .about__container{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -965,10 +961,10 @@ a.button {
   }
 
   .category__container{
-    column-gap: 8rem;
+    column-gap: 7rem;
   }
   .category__img{
-    width: 200px;
+    width: 350px;
   }
 
   .about__container{
